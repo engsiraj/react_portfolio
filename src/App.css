@@ -96,7 +96,7 @@ header{
 .tagline{
   background-color:var(--dim);
   padding: 2%;
-  width:30%;
+  width:33%;
   position: absolute;
   z-index: 1;
   margin-right:60%;
@@ -198,7 +198,7 @@ header{
 
 .tagline{
   padding: 2%;
-  width:35%;
+  width:38%;
   margin-right:53%;
   margin-top: 24%;
   }
@@ -222,7 +222,7 @@ header{
 
 .tagline{
   padding: 2%;
-  width:37%;
+  width:40.5%;
   margin-right:49.5%;
   margin-top:18%;
   }
