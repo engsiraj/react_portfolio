@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaLinkedinIn, FaGithub, FaTwitter, FaInstagram,} from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub, FaTwitter, FaInstagram} from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 const Contact = (props) => {
     return (
