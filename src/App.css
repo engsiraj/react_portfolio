@@ -311,6 +311,11 @@ header{
   margin-top: 25px;
   width: 100%;
 }
+/*! join-section */
+.join{
+  padding: 10%;
+}
+
 /*! contact section */
 .contact{
   flex-direction: column;
