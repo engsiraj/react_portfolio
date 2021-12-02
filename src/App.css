@@ -1,38 +1,330 @@
-.App {
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --black: #1d1d1b;
+  --dim: #d6d6d6;
+  --white: #ffffff;
+}
+.ms {
+  padding: 0px 40px;
+}
+.btn-primary {
+  color: var(--black);
+  padding: 10px 24px;
+  font-weight:500;
+  font-size: 16px;
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border:2px solid var(--black)
+  }
+  .btn-primary:hover{
+    color: var(--white);
+    background:var(--black);
+  }
+.main-heading{
+  margin:80px 0;
+  text-align: center;
+  font-size:30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--black);
+  font-family: 'Playfair Display', serif;
+}
+.heading{
+  padding:8px 0;
+  font-size:20px;
+  font-weight:600;
+  color: var(--black);
+  font-family: 'Playfair Display', serif;
+}
+.text-bold{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+}
+.text{
+  font-size: 16px;
+  font-weight: 400;
+  line-height:1.5;
+  color: var(--black);
+}
+.social-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: var(--black);
+}
+i{
+  padding: 15px 20px 0px 0px;
+  color: var(--black);
+}
+a{
+  text-decoration: none;
+}
+
+
+/*! nav section */
+
+nav {
+  position: relative;
+  }
+.nav-body {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  }
+.logo {
+  width: 40px;
+  height: 40px;
+  }
+
+/*! header section */
+
+header{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  }
+.tagline{
+  background-color:var(--dim);
+  padding: 2%;
+  width:30%;
+  position: absolute;
+  z-index: 1;
+  margin-right:60%;
+  margin-top: 28%;
+  
+  }
+.tag-heading{
+  margin-bottom: 12px;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  }
+.tag-img{
+  width: 70%;
+  height: 70%;
+  }
+
+/* ! projects-section */
+
+.project-main{
+  display: flex;
+  background-color: var(--white);
+  position: relative;
+  margin-bottom: 7%;
+}
+.project-image{
+  padding:2% 0;
+  z-index: 1;
+  width:30%;
+}
+.project-bg{
+  margin-left: -100px;
+  background-color:var(--dim);
+} 
+.project-content{
+  padding: 10% 25% 10% 18%;
+}
+
+/* !join section */
+
+.join{
+  padding: 6%;
+  background-color: var(--dim);
+  text-align: center;
+}
+.p3{
+  margin-left: 15px;
+}
+
+/*! about-section */
+
+.about{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dim);
+  padding: 3%;
+}
+.about-content{
+  width:55%;
+  margin-right: 20px;
+}
+.tech-stack{
+  width: 40%;
+}
+
+/*! contact section */
+
+.contact{
+  display: flex;
+  background-color:var(--dim);
+  justify-content: space-between;
+  padding: 3%;
+}
+.p20{
+ margin-top:15px;
+}
+.mail{
+  width: 45%;
+}
+.social{
+  width: 40%;
+}
+
+/*! footer section */
+
+.center{
+  padding:4% 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+/*? Reponsive design for desktop */
+
+@media(max-width:1200px){
+
+
+/*! header section */
+
+.tagline{
+  padding: 2%;
+  width:35%;
+  margin-right:53%;
+  margin-top: 24%;
   }
+  .tag-heading{
+  font-size: 28px;
+  }
+  
+/*! about-section */
+
+.about-img{
+  width: 35%;
+}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  
+/*? Reponsive design for ipad and tablets */
+
+@media(max-width:1000px){
+ 
+/*! header section */
+
+.tagline{
+  padding: 2%;
+  width:37%;
+  margin-right:49.5%;
+  margin-top:18%;
+  }
+.tag-heading{
+  font-size: 26px;
+  }
+
+/*! header section */
+
+.project-content{
+  padding: 10% 10% 10%  25%;
+}
+.project-image{
+  width:40%;
+}
+
+/*! about-section */
+
+.about-img{
+  width: 40%;
+}
+/*! contact section */
+.mail{
+  width: 50%;
+}
+}
+
+
+/*? Reponsive design for ipad and tablets */
+
+
+@media(max-width:769px){
+
+/*! header section */
+
+header{
+  margin-top: 4%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  position: relative;
   }
-  to {
-    transform: rotate(360deg);
+.tagline{
+  background-color:var(--dim);
+  padding: 3%;
+  flex-direction: column;
+  position: static;
+  width: 94%;
+  margin-top: 0;
   }
+.tag-heading{
+  font-size: 26px;
+  }
+.tag-img{
+  width: 100%;
+  height: 100%;
+  }
+ 
+
+/* ! projects-section */
+.project-main{
+  flex-direction: column;
+  margin-bottom: 7%;
+}
+.project-image{
+  padding:10%;
+  z-index: 1;
+  width:80%;
+  margin-bottom: -40%;
+}
+.project-bg{
+  margin:0px;
+} 
+.project-content{
+  padding: 35% 10% 10% 10%;
+}
+/*! about-section */
+
+.about{
+  flex-direction: column;
+  padding: 5%;
+}
+.about-content{
+  width:100%;
+}
+.tech-stack{
+  margin-top: 25px;
+  width: 100%;
+}
+/*! contact section */
+.contact{
+  flex-direction: column;
+  padding: 5%;
+}
+.p20{
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+.mail{
+  width: 100%;
+}
+.social{
+  margin-top: 25px;
+  width: 100%;
+}
 }
