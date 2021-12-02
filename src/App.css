@@ -9,11 +9,11 @@
   --white: #ffffff;
 }
 .ms {
-  padding: 0px 40px;
+  padding: 0px 20px;
 }
 .btn-primary {
   color: var(--black);
-  padding: 10px 24px;
+  padding: 8px 20px;
   font-weight:500;
   font-size: 16px;
   border: none;
