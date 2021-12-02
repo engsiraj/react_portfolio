@@ -21,7 +21,7 @@ function App() {
       <Projects sname='Projects' />
       
        <Join jointxt="Want to Talk ?" 
-             joinbtntxt='Send a messsage'
+             joinbtntxt="let's talk"
              mailto ='mailto:sirajbhutta50@gmail.com'
       />
       <AboutSec sname='About Me' />
